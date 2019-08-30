@@ -22,6 +22,11 @@ ccat <- function(...) {
   flush.console()
 }
 
+# Clean registry
+if (system("reg query HKEY_CURRENT_USER\\Software\\Rex",ignore.stdout=T,ignore.stderr=T) == 1) {
+  invisible(system("reg delete HKEY_CURRENT_USER\\Software\\Rex /f",ignore.stdout=T,ignore.stderr=T))
+}
+
 adcode <- suppressWarnings(system("fltmc",show.output.on.console=FALSE))
 if (adcode == 0) {
 } else if (adcode == 1) {
