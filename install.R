@@ -38,15 +38,14 @@ if (adcode == 0) {
 }
 
 srvs = c("http://healthstat.snu.ac.kr/CRAN",
-	"http://cran.yu.ac.kr",
-	"http://cran.biodisk.org")
+	"http://cran.yu.ac.kr")
 set.seed(round((as.numeric(Sys.time())*10000)%%10000))
 repo = sample(srvs,1)
 specpkg = list(
   "ggfortify" = "0.4.1",
   "data.table" = "1.10.4-3"
 )
-req = c("Rserve", "caTools", "digest", "R2HTML", "markdown", "moments", "mice", "VIM", "randomForest", "car", "AICcmodavg", "agricolae", "MASS", "testit", "plyr", "philentropy", "ade4", "DescTools", "vcd", "oii", "coin", "vcdExtra", "cluster", "fpc", "dbscan", "tree", "party", "rpart", "caret", "partykit", "e1071", "klaR", "psy", "psych", "GPArotation", "FactoMineR", "devtools", "factoextra", "forecast", "ggplot2", "ggfortify", "rugarch", "fishmethods", "survival", "KMsurv", "rms", "plsdepot", "AER", "pscl", "ResourceSelection", "lmtest", "VGAM", "lme4", "leaps", "scatterplot3d", "flashClust", "withr", "ggExtra", "GGally", "expm", "manipulate", "Matrix", "biotools", "crayon", "ROCR", "exactRankTests", "lsr", "discSurv", "moonBook", "ggrepel", "cowplot", "ggpubr", "rootSolve", "PASWR", "popbio", "fitdistrplus", "tidyselect", "epiR", "pROC", "meta", "metafor", "metasens", "mada", "lavaan", "semTools", "semPlot", "glmnet", "plotmo", "qcc", "ggparty", "ggdendro", "survminer")
+req = c("Rserve", "caTools", "digest", "R2HTML", "markdown", "moments", "mice", "VIM", "randomForest", "car", "AICcmodavg", "agricolae", "MASS", "testit", "plyr", "philentropy", "ade4", "DescTools", "vcd", "oii", "coin", "vcdExtra", "cluster", "fpc", "dbscan", "tree", "party", "rpart", "caret", "partykit", "e1071", "klaR", "psy", "psych", "GPArotation", "FactoMineR", "devtools", "factoextra", "forecast", "ggplot2", "ggfortify", "rugarch", "fishmethods", "survival", "KMsurv", "rms", "plsdepot", "AER", "pscl", "ResourceSelection", "lmtest", "VGAM", "lme4", "leaps", "scatterplot3d", "flashClust", "withr", "ggExtra", "GGally", "expm", "manipulate", "Matrix", "biotools", "crayon", "ROCR", "exactRankTests", "lsr", "discSurv", "moonBook", "ggrepel", "cowplot", "ggpubr", "rootSolve", "PASWR", "popbio", "fitdistrplus", "tidyselect", "epiR", "pROC", "meta", "metafor", "metasens", "mada", "lavaan", "semTools", "semPlot", "glmnet", "plotmo", "qcc", "ggparty", "ggdendro", "survminer", "MKmisc", "ggforce", "MatchIt", "tableone")
 
 defpkg = c("R", "stats", "graphics", "methods", "utils", "grDevices", "grid", "stats4", "splines", "survival", "lattice", "MASS", "tools", "parallel", "datasets", "rJava", "JavaGD", "JGR", "Deducer", "base", "openssl", "tcltk")
 
